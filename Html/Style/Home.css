@@ -18,6 +18,11 @@ body{
     min-height: 100%;
 }
 
+.logo{
+    width: auto;
+    height: 60px;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -104,5 +109,12 @@ body{
 .headline .buttons a.get-started{
     padding: 12px 24px;
     border: 1px solid #ffffff;
-    border-radius: 0 16px;
+    border-radius: 0 16px;   
+    background-color: #009ef7;
+}
+
+
+.headline .buttons a.get-started:hover{
+    color: #0018A8;
+    background-color: #ffffff
 }
