@@ -20,15 +20,6 @@ body{
     position: relative;
 }
 
-.login-card::before{
-    content: '';
-    position: absolute;
-    background: rgba(255,255,255,.15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-}
-
 .login-card-logo{
     margin-bottom: 2rem;
 }
