@@ -1,11 +1,11 @@
-@import url("reset.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 a{
     text-decoration: none;
 }
 
-body{
+.body{
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right,#009ef7,#ffffff);
@@ -22,12 +22,17 @@ body{
     position: relative;
 }
 
+
+.login-card div{
+    color: black;
+}
+
 .login-card-logo{
     margin-bottom: 2rem;
 }
 
 .login-card-logo img{
-    width:120px ;
+    width:150px ;
 }
 
 .login-card-logo,
