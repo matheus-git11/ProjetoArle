@@ -26,8 +26,11 @@ const Home = () => {
                 <li>
                   <a href="Login.html">Login</a>
                 </li>
+
                 <li>
+                  <Link to={'/dashboard'}>
                   <a href="DashBoard.html">Servicos</a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#">Sobre</a>

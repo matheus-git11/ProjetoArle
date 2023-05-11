@@ -131,6 +131,21 @@ a{
     
 }
 
+.login-card-form Link button{
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.login-card-form Link button:hover{
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+
 .login-card-form button:hover{
     background-color: rgba(0, 0, 0, .85);
     cursor: pointer;

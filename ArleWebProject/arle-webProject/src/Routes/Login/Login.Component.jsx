@@ -39,10 +39,13 @@ const Login = () => {
                         <label for="rememberMeCheckbox">Lembrar-me</label>
                     </div>
                     <Link to={'/ForgottenPassword'}>
-                    <a href="ForgottenPassword.html">Esqueci minha senha!</a>
+                    <a>Esqueci minha senha!</a>
                     </Link>
                 </div>
-                <button type="submit">Entrar</button>
+
+            
+             <button type="submit">Entrar</button>
+          
             </form>
 
             <div className="login-card-footer">

@@ -4,6 +4,7 @@ import Home from "./Routes/Home/Home.Component"
 import Login from "./Routes/Login/Login.Component"
 import Register from "./Routes/Register/Register.Component"
 import ForgottenPassword from "./Routes/ForgottenPassword/ForgottenPassword.Component"
+import Dashboard from "./Routes/Dashboard/Dashboard.Component,"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="ForgottenPassword" element={<ForgottenPassword/>}/>
-      <Route/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
   
     </Routes>
   )
