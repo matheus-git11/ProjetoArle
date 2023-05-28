@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 
 import './Dashboard.Style.css'
 
@@ -7,7 +7,7 @@ const Dashboard = () => {
     
 return (
     <Fragment>
-      <nav>
+      <nav className="DashboardNav">
         <div className="logo-name">
           <div className="logo-image">
             <img src="Img/Arle.png" alt="" />

@@ -35,23 +35,19 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    width: 992px;
+    width:90%;
     height: 100%;
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 96px;
 }
 
-.navbar .logo{
-    font-size: 28px;
-    font-weight: 300;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
+
 
 .navbar ul{
     list-style-type: none;

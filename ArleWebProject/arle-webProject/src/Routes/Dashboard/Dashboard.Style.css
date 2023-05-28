@@ -88,9 +88,7 @@ li,input[type="date"]{
     margin-top: 10px;
     
 }
-
-
-nav{
+.DashboardNav{
     position: fixed;
     top: 0;
     left: 0;
@@ -101,40 +99,40 @@ nav{
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
 }
-nav.close{
+.DashboardNav.close{
     width: 73px;
 }
-nav .logo-name{
+.DashboardNav .logo-name{
    
     align-items: center;
 }
-nav .logo-image{
+.DashboardNav .logo-image{
     display: flex;
     justify-content: center;
     min-width: 45px;
 }
-nav .logo-image img{
+.DashboardNav .logo-image img{
     width: 100px;
     object-fit: cover;
 }
 
-nav .logo-name .logo_name{
+.DashboardNav .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
     color: var(--text-color);
     margin-left: 14px;
     transition: var(--tran-05);
 }
-nav.close .logo_name{
+.DashboardNav.close .logo_name{
     opacity: 0;
     pointer-events: none;
 }
 
-nav.close .logo-image img{
+.DashboardNav.close .logo-image img{
     width: 60px;
 }
 
-nav .menu-items{
+.DashboardNav .menu-items{
     margin-top: 40px;
     height: calc(100% - 90px);
     display: flex;
@@ -152,7 +150,7 @@ nav .menu-items{
     position: relative;
     color:#707070;
 }
-.nav-links li a:hover:before{
+.DashboardNav-links li a:hover:before{
     content: "";
     position: absolute;
     left: -7px;
@@ -179,16 +177,16 @@ body.dark li a:hover:before{
     color: var(--black-light-color);    
     transition: var(--tran-05);
 }
-nav.close li a .link-name{
+.DashboardNav.close li a .link-name{
     opacity: 0;
     pointer-events: none;
 }
-.nav-links li a:hover i,
-.nav-links li a:hover .link-name{
+.DashboardNav-links li a:hover i,
+.DashboardNav-links li a:hover .link-name{
     color: var(--primary-color);
 }
-body.dark .nav-links li a:hover i,
-body.dark .nav-links li a:hover .link-name{
+body.dark .DashboardNav-links li a:hover i,
+body.dark .DashboardNav-links li a:hover .link-name{
     color: var(--text-color);
 }
 .menu-items .logout-mode{
@@ -243,7 +241,7 @@ body.dark .switch:before{
     padding: 10px 14px;
     transition: var(--tran-05);
 }
-nav.close ~ .dashboard{
+.DashboardNav.close ~ .dashboard{
     left: 73px;
     width: calc(100% - 73px);
 }
@@ -260,7 +258,7 @@ nav.close ~ .dashboard{
     transition: var(--tran-05);
     z-index: 10;
 }
-nav.close ~ .dashboard .top{
+.DashboardNav.close ~ .dashboard .top{
     left: 73px;
     width: calc(100% - 73px);
 }
@@ -393,41 +391,41 @@ nav.close ~ .dashboard .top{
 }
 
 @media (max-width: 1000px) {
-    nav{
+    .DashboardNav{
         width: 73px;
     }
-    nav.close{
+    .DashboardNav.close{
         width: 250px;
     }
-    nav .logo_name{
+    .DashboardNav .logo_name{
         opacity: 0;
         pointer-events: none;
     }
-    nav.close .logo_name{
+    .DashboardNav.close .logo_name{
         opacity: 1;
         pointer-events: auto;
     }
-    nav li a .link-name{
+    .DashboardNav li a .link-name{
         opacity: 0;
         pointer-events: none;
     }
-    nav.close li a .link-name{
+    .DashboardNav.close li a .link-name{
         opacity: 1;
         pointer-events: auto;
     }
-    nav ~ .dashboard{
+    .DashboardNav ~ .dashboard{
         left: 73px;
         width: calc(100% - 73px);
     }
-    nav.close ~ .dashboard{
+    .DashboardNav.close ~ .dashboard{
         left: 250px;
         width: calc(100% - 250px);
     }
-    nav ~ .dashboard .top{
+    .DashboardNav ~ .dashboard .top{
         left: 73px;
         width: calc(100% - 73px);
     }
-    nav.close ~ .dashboard .top{
+    .DashboardNav.close ~ .dashboard .top{
         left: 250px;
         width: calc(100% - 250px);
     }
@@ -448,41 +446,41 @@ nav.close ~ .dashboard .top{
     }
 }
 @media (max-width: 400px) {
-    nav{
+    .DashboardNav{
         width: 0px;
     }
-    nav.close{
+    .DashboardNav.close{
         width: 73px;
     }
-    nav .logo_name{
+    .DashboardNav .logo_name{
         opacity: 0;
         pointer-events: none;
     }
-    nav.close .logo_name{
+    .DashboardNav.close .logo_name{
         opacity: 0;
         pointer-events: none;
     }
-    nav li a .link-name{
+    .DashboardNav li a .link-name{
         opacity: 0;
         pointer-events: none;
     }
-    nav.close li a .link-name{
+    .DashboardNav.close li a .link-name{
         opacity: 0;
         pointer-events: none;
     }
-    nav ~ .dashboard{
+    .DashboardNav ~ .dashboard{
         left: 0;
         width: 100%;
     }
-    nav.close ~ .dashboard{
+    .DashboardNav.close ~ .dashboard{
         left: 73px;
         width: calc(100% - 73px);
     }
-    nav ~ .dashboard .top{
+    .DashboardNav ~ .dashboard .top{
         left: 0;
         width: 100%;
     }
-    nav.close ~ .dashboard .top{
+    .DashboardNav.close ~ .dashboard .top{
         left: 0;
         width: 100%;
     }
