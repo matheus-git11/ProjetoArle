@@ -24,12 +24,12 @@ const Register= () => {
 
                 <div  className="form-item">
                     <span  className="form-item-icon material-symbols-rounded">person</span>
-                    <input type="text" placeholder="Inserir Nome Completo" required autofocus/>
+                    <input type="text" placeholder="Inserir Nome Completo" required autoFocus/>
                 </div>
 
                 <div  className="form-item">
                     <span  className="form-item-icon material-symbols-rounded">mail</span>
-                    <input type="text" placeholder="Inserir Login" required autofocus/>
+                    <input type="text" placeholder="Inserir Login" required autoFocus/>
                 </div>
 
                 <div  className="form-item">
