@@ -5,6 +5,7 @@ import Login from "./Routes/Login/Login.Component"
 import Register from "./Routes/Register/Register.Component"
 import ForgottenPassword from "./Routes/ForgottenPassword/ForgottenPassword.Component"
 import Dashboard from "./Routes/Dashboard/Dashboard.Component,"
+import About from "./Routes/About/About.component"
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       <Route path="/register" element={<Register/>}/>
       <Route path="ForgottenPassword" element={<ForgottenPassword/>}/>
       <Route path="/dashboard" element={<Dashboard/>}/>
-  
+      <Route path="/sobre" element={<About/>}/>
     </Routes>
   )
 }

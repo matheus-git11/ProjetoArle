@@ -30,9 +30,14 @@ const Home = () => {
                     <a href="DashBoard.html">Servicos</a>
                   </Link>
                 </li>
-                <li>
+               
+               <li>
+                <Link to={"/sobre"}>
                   <a href="#">Sobre</a>
-                </li>
+               </Link>
+             </li>
+
+
                 <li>
                   <a href="#">Contato</a>
                 </li>

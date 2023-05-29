@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#009ef7,#ffffff);
+}
+
+.about-us{
+    width: 100%;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2b9ec2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+   
+    margin-bottom: 2em;
+}
+
+.about-us h1::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #2b9ec2;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.wapper{
+    padding: 0px 60px;
+    margin: 60px auto;
+}
+
+.content{
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.content h3{
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.content p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #3d3d3d;
+    margin-top: 20px;
+}
+
+.content .button{
+    margin-top: 40px;
+}
+
+.content .button a{
+    color: #fff;
+    background-color: #2b9ec2;
+    border: 1px solid #2b9ec2;
+    padding: 10px 35px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.content .button a:hover{
+    background-color: #2b9ec2;
+    color: #2b9ec2;   
+}
+
+.content .social{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.content .social a{
+    text-decoration: none;
+    color: #222;
+    font-size: 25px;
+}
+
+.content .social i{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.content .social a:hover{
+    color: #2b9ec2;
+    transition: 1s ease;
+}
+
+.image-section{
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+}
+
+.image-section img{
+    max-width: 100%;
+    height: auto;
+}
+
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card:hover{
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card h2{
+    font-size: 28px;
+    color: #c94f4f;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c677c ;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    background-color: #c94f4f;
+    transition: 0.4s ease;
+}
+
+
+@media screen and (max-width: 900px){
+    .about-us{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about-us h1{
+        font-size: 32px;
+    }
+    .content{
+        width: 100%;
+        float: none;
+    }
+    .content .button{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .button a{
+        padding: 8px 25px;
+    }
+    .content .social{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .social a{
+        font-size: 21px;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 25%;
+    }
+}
+
+
+
+
+
+
