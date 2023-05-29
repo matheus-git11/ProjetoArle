@@ -1,16 +1,11 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 
 import "./Dashboard.Style.css";
 
 const Dashboard = () => {
  
   const body = document.querySelector("body");
-  const modeToggle = body.querySelector(".mode-toggle");
   const sidebar = body.querySelector(".DashboardNav");
-  const sidebarToggle = body.querySelector(".sidebar-toggle");
-
-  let getMode = localStorage.getItem("mode");
-  let getStatus = localStorage.getItem("status")
 
 function setMod(){
   body.classList.toggle("dark");
