@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 
 import ArleLogo from '../../assets/Arle.png'
 
@@ -36,7 +36,7 @@ const Login = () => {
                 <div className="form-item-other">
                     <div className="checkbox">
                         <input type="checkbox" id="rememberMeCheckbox"/>
-                        <label for="rememberMeCheckbox">Lembrar-me</label>
+                        <label htmlFor="rememberMeCheckbox">Lembrar-me</label>
                     </div>
                     <Link to={'/ForgottenPassword'}>
                     <a>Esqueci minha senha!</a>

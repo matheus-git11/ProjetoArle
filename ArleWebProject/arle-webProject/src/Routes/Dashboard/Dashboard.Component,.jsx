@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import "./Dashboard.Style.css";
+import ArleLogo from '../../assets/Arle.png'
 
 const Dashboard = () => {
  
@@ -31,7 +32,7 @@ function setStatus(){
         <nav className="DashboardNav">
           <div className="logo-name">
             <div className="logo-image">
-              <img src="Img/Arle.png" alt="" />
+              <img src={ArleLogo} alt=""/>
             </div>
           </div>
 
