@@ -1,35 +1,33 @@
-import { Fragment } from "react";
+import { Fragment, useState} from "react";
 
 import "./Dashboard.Style.css";
 import ArleLogo from '../../assets/Arle.png'
 
 const Dashboard = () => {
- 
+
+  const [isSidebarClosed, setIsSidebarClosed] = useState(false);
+
   const body = document.querySelector("body");
-  const sidebar = body.querySelector(".DashboardNav");
 
-function setMod(){
-  body.classList.toggle("dark");
-  if(body.classList.contains("dark")){
-    localStorage.setItem("mode","dark")
-  }else{
-    localStorage.setItem("mode","light")
+
+  function setMod(){
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+      localStorage.setItem("mode","dark")
+    }else{
+      localStorage.setItem("mode","light")
+    }
   }
-}
 
-function setStatus(){
-  sidebar.classList.toggle("close")
-  if(sidebar.classList.contains("close")){
-    localStorage.setItem("status","close")
-  }else{
-    localStorage.setItem("status","open")
+  function setStatus() {
+    const newStatus = !isSidebarClosed;
+    setIsSidebarClosed(newStatus);
+    localStorage.setItem('status', newStatus ? 'close' : 'open');
   }
-}
-
   return (
     <Fragment>
       <div className="BodyDiv">
-        <nav className="DashboardNav">
+        <nav className={`DashboardNav ${isSidebarClosed ? 'close' : ''}`}>
           <div className="logo-name">
             <div className="logo-image">
               <img src={ArleLogo} alt=""/>
