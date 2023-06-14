@@ -49,25 +49,14 @@ const Dashboard = () => {
                 </a>
               </li>
               <li>
-                De
+                <p>De</p>
                 <input type="date" />
               </li>
               <li>
-                Até
+                <p>Até</p>
                 <input type="date" />
               </li>
-              <li>
-                <a href="#">
-                  <i className="uil uil-chart"></i>
-                  <span className="link-name">De</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="uil uil-thumbs-up"></i>
-                  <span className="link-name">Ate</span>
-                </a>
-              </li>
+              
             </ul>
             <ul className="logout-mode">
               <li>
