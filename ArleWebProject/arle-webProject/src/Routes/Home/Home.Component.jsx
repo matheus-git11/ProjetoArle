@@ -17,9 +17,9 @@ const Home = () => {
           <div className="content">
 
             <nav className="navbar">
-           
+
               <img src={ArleLogo} alt="Logo Da empresa Arle" className="logo" />
-              
+
               <ul>
                 <li>
                   <a href="Login.html">Login</a>
@@ -30,21 +30,21 @@ const Home = () => {
                     <a href="DashBoard.html">Servicos</a>
                   </Link>
                 </li>
-               
-               <li>
-                <Link to={"/sobre"}>
-                  <a href="#">Sobre</a>
-               </Link>
-             </li>
+
+                <li>
+                  <Link to={"/sobre"}>
+                    <a href="#">Sobre</a>
+                  </Link>
+                </li>
 
 
                 <li>
                   <a href="#">Contato</a>
                 </li>
-              </ul> 
+              </ul>
             </nav>
-            
-        
+
+
             <div className="headline">
               <h2>Monitoramento profissional</h2>
               <p>

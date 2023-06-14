@@ -48,12 +48,12 @@ const Dashboard = () => {
                   <span className="link-name">Departamento</span>
                 </a>
               </li>
+              <p>De</p>
               <li>
-                <p>De</p>
                 <input type="date" />
               </li>
+              <p>Até</p>
               <li>
-                <p>Até</p>
                 <input type="date" />
               </li>
               
