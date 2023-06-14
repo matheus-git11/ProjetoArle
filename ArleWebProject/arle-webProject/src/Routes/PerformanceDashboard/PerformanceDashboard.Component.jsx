@@ -241,15 +241,15 @@ const Performance = () => {
                                     <div className="piechart"></div>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'lightblue' }}></span>
-                                        Porcentagem: 48%
+                                        Desempenho: 48%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'pink' }}></span>
-                                        Porcentagem: 24%
+                                        Lucros: 24%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'orange' }}></span>
-                                        Porcentagem: 36%
+                                        Performance: 36%
                                     </p>
                                 </div>
                                 <div className="piechart-wrapper">
@@ -257,15 +257,15 @@ const Performance = () => {
                                     <div className="piechart"></div>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'lightblue' }}></span>
-                                        Porcentagem: 48%
+                                        Desempenho: 48%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'pink' }}></span>
-                                        Porcentagem: 24%
+                                        Lucros: 24%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'orange' }}></span>
-                                        Porcentagem: 36%
+                                        Performance: 36%
                                     </p>
                                 </div>
                                 <div className="piechart-wrapper">
@@ -273,15 +273,15 @@ const Performance = () => {
                                     <div className="piechart"></div>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'lightblue' }}></span>
-                                        Porcentagem: 48%
+                                        Design: 48%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'pink' }}></span>
-                                        Porcentagem: 24%
+                                        Administrativo: 24%
                                     </p>
                                     <p class="p_desempenho">
                                         <span className="color-dot" style={{ backgroundColor: 'orange' }}></span>
-                                        Porcentagem: 36%
+                                        Tributário: 36%
                                     </p>
                                 </div>
                             </div>
