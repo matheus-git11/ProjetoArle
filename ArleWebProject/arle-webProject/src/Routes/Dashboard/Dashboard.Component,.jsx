@@ -1,7 +1,8 @@
-import { Fragment, useState} from "react";
+import { Fragment, useState } from "react";
 
 import "./Dashboard.Style.css";
 import ArleLogo from '../../assets/Arle.png'
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
 
@@ -10,12 +11,12 @@ const Dashboard = () => {
   const body = document.querySelector("body");
 
 
-  function setMod(){
+  function setMod() {
     body.classList.toggle("dark");
-    if(body.classList.contains("dark")){
-      localStorage.setItem("mode","dark")
-    }else{
-      localStorage.setItem("mode","light")
+    if (body.classList.contains("dark")) {
+      localStorage.setItem("mode", "dark")
+    } else {
+      localStorage.setItem("mode", "light")
     }
   }
 
@@ -30,24 +31,36 @@ const Dashboard = () => {
         <nav className={`DashboardNav ${isSidebarClosed ? 'close' : ''}`}>
           <div className="logo-name">
             <div className="logo-image">
-              <img src={ArleLogo} alt=""/>
+              <img src={ArleLogo} alt="" />
             </div>
           </div>
 
           <div className="menu-items">
             <ul className="nav-links">
               <li>
-                <a href="#">
-                  <i className="uil uil-estate"></i>
-                  <span className="link-name">Universo</span>
-                </a>
+                <Link to={"/sobre"}>
+                  <a href="#">
+                    <i className="uil uil-estate"></i>
+                    <span className="link-name">Universo</span>
+                  </a>
+                </Link>
               </li>
               <li>
                 <a href="#">
                   <i className="uil uil-files-landscapes"></i>
-                  <span className="link-name">Departamento</span>
+                  <span className="link-name">Dashboard</span>
                 </a>
               </li>
+
+              <li>
+                <Link to={"/performance"}>
+                  <a href="#">
+                    <i className="uil uil-chart-line"></i>
+                    <span className="link-name">Desempenho</span>
+                  </a>
+                </Link>
+              </li>
+
               <p>De</p>
               <li>
                 <input type="date" />
@@ -56,14 +69,16 @@ const Dashboard = () => {
               <li>
                 <input type="date" />
               </li>
-              
+
             </ul>
             <ul className="logout-mode">
               <li>
-                <a href="#">
-                  <i className="uil uil-signout"></i>
-                  <span className="link-name">Sair</span>
-                </a>
+                <Link to={"/home"}>
+                  <a href="#">
+                    <i className="uil uil-signout"></i>
+                    <span className="link-name">Sair</span>
+                  </a>
+                </Link>
               </li>
 
               <li className="mode">
@@ -73,7 +88,7 @@ const Dashboard = () => {
                 </a>
 
                 <div className="mode-toggle">
-                  <span className="switch" onClick={setMod} ></span> 
+                  <span className="switch" onClick={setMod} ></span>
                 </div>
               </li>
             </ul>

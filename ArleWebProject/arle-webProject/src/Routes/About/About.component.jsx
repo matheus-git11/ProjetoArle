@@ -1,5 +1,3 @@
-
-
 import '../About/About.style.css'
 import trabalho from '../../assets/trabalho.png'
 
